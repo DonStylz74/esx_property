@@ -702,53 +702,22 @@ function AttemptHouseEntry(PropertyId)
 end
 
 function StoreVehicle(PropertyId)
-  local Vehicle = GetVehiclePedIsIn(ESX.PlayerData.ped, false)
-  if Vehicle then
-    local VehProperties = ESX.Game.GetVehicleProperties(Vehicle)
-    VehProperties.DisplayName = GetLabelText(GetDisplayNameFromVehicleModel(VehProperties.model))
-    ESX.TriggerServerCallback("esx_property:StoreVehicle", function(result)
-      if result then
-        SetEntityAsMissionEntity(Vehicle, true, true)
-        DeleteVehicle(Vehicle)
-        ESX.ShowNotification(TranslateCap("store_success"), "success")
-        return
-      else
-        ESX.ShowNotification(TranslateCap("store_error"), "error")
-        return
-      end
-    end, PropertyId, VehProperties)
-  end
+  exports.mGarage:SaveCar({
+    name = Properties[PropertyId].Name,
+    garagetype = 'garage',
+    entity = false,
+    carType = { 'automobile', 'bike' },
+  })
 end
 
 function AccessGarage(PropertyId)
-  ESX.TriggerServerCallback("esx_property:AccessGarage", function(Vehicles)
-    if Vehicles then
-      local elements = {{unselectable = true, icon = "fas fa-warehouse", title = TranslateCap("property_garage")}}
-      for k, v in pairs(Vehicles) do
-        elements[#elements + 1] = {title = v.vehicle.DisplayName .. " | " .. v.vehicle.plate, Properties = v.vehicle, index = k}
-      end
-      ESX.OpenContext("right", elements, function(menu, element)
-        if element.Properties then
-          ESX.CloseContext()
-          ESX.ShowNotification(TranslateCap("retriving_notify",element.Properties.DisplayName))
-          if ESX.Game.IsSpawnPointClear(vector3(Properties[PropertyId].garage.pos.x, Properties[PropertyId].garage.pos.y,
-            Properties[PropertyId].garage.pos.z), 3.0) then
-            ESX.Game.SpawnVehicle(element.Properties.model, Properties[PropertyId].garage.pos, Properties[PropertyId].garage.Heading,
-              function(vehicle)
-                SetEntityAsMissionEntity(vehicle, true, true)
-                ESX.Game.SetVehicleProperties(vehicle, element.Properties)
-                TaskWarpPedIntoVehicle(ESX.PlayerData.ped, vehicle, -1)
-                SetModelAsNoLongerNeeded(element.Properties.model)
-                TriggerServerEvent("esx_property:SetVehicleOut", PropertyId, element.index)
-              end)
-          end
-        end
-      end)
-    else
-      ESX.ShowNotification(TranslateCap("cannot_access"), "error")
-      return
-    end
-  end, PropertyId)
+  exports.mGarage:OpenGarage({
+    name = Properties[PropertyId].Name,
+    garagetype = 'garage',
+    intocar = true,
+    carType = { 'automobile', 'bike' },
+    spawnpos = { vector4(Properties[PropertyId].garage.pos.x, Properties[PropertyId].garage.pos.y, Properties[PropertyId].garage.pos.z, Properties[PropertyId].garage.Heading) }
+  })
 end
 
 CreateThread(function()
