@@ -7,7 +7,7 @@ Config.OwnedBlips = true -- Add blips for Owned Properties
 
 --------------------- General Settings ---------------------------------
 Config.Locale = GetConvar('esx:locale', 'en')
-Config.Shells = false -- Enable/Disable Shell Interiors Default: false
+Config.Shells = true -- Enable/Disable Shell Interiors Default: false
 Config.SaveInterval = 5 -- Interval in Minutes to Save Properties
 Config.CanAlwaysExit = true -- Disabling this allows players to be locked in
 Config.OwnerCanAlwaysEnter = true -- Disabling this means the owner can't enter the property unless door is unlocked
@@ -20,7 +20,7 @@ Config.WipeFurnitureOnSell = true -- Wipe custom name on sell Default: true
 --------------------- Zone Suggested Prices  ---------------------------------
 Config.ZonePriceOptions = {
     Enabled = true, -- Enable/Disable Zone Prices Modifiers Default: true
-    Default = 250000, -- Default Price of a property Default: 250000
+    Default = 650000, -- Default Price of a property Default: 250000
 }
 
 -- The Amount to Multiply the Default Price by (if the above is enabled):
@@ -125,7 +125,12 @@ Config.AllowedGroups = {
 }
 
 ------------------Interacting With Wardrobe Markers ------------------------------
-Config.WardrobeInteraction = function(PropertyId, Interaction)
+
+    Config.WardrobeInteraction = function(PropertyId, Interaction)        <--COPY
+        exports['fivem-appearance']:openWardrobe()                        <--COPY
+    end
+
+--[[Config.WardrobeInteraction = function(PropertyId, Interaction)
   ESX.TriggerServerCallback('esx_property:getPlayerDressing', function(dressing)
     local elements = {{unselectable = true, icon = "fas fa-tshirt", title = "Wardrobe"}}
 
@@ -149,7 +154,7 @@ Config.WardrobeInteraction = function(PropertyId, Interaction)
         end)
     end)
 end)
-end
+end]]--
 
 --------------------- Real Estate Settings ----------
 Config.PlayerManagement = {                          
