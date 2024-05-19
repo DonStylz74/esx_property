@@ -126,8 +126,8 @@ Config.AllowedGroups = {
 
 ------------------Interacting With Wardrobe Markers ------------------------------
 
-    Config.WardrobeInteraction = function(PropertyId, Interaction)        <--COPY
-        exports['fivem-appearance']:openWardrobe()                        <--COPY
+    Config.WardrobeInteraction = function(PropertyId, Interaction)
+        exports['fivem-appearance']:openWardrobe()
     end
 
 --[[Config.WardrobeInteraction = function(PropertyId, Interaction)
