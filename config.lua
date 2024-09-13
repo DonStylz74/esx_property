@@ -322,6 +322,30 @@ Config.Interiors = {
       type = "ipl",
       pos = vector3(1121.1871, -3152.6177, -37.0628)
     },
+---------------OP Motel Shell
+    {
+      label = "Low Motel OP Furnished",  -- working
+      value = "op_motel_milo",
+      positions = {
+        Wardrobe = vector3(-380.591, 136.5057, 47.904),
+        Storage = vector3(-375.851, 136.8652, 47.904), -- Only Works with Ox Inventory
+      },
+      type = "ipl",
+      pos = vector3(-382.573, 135.5830, 47.904)
+    },
+
+---------------BAM Motel Shell
+    {
+      label = "High Motel BAM Furnished",
+      value = "bam_motel_milo_",
+      positions = {
+        Wardrobe = vector3(286.6260, -922.287, -23.00),
+        Storage = vector3(283.5235, -925.432, -23.00), -- Only Works with Ox Inventory
+      },
+      type = "ipl",
+      pos = vector3(290.9567, -925.060, -22.99)
+    },
+
   },
   Shells = {
     {
@@ -403,6 +427,350 @@ Config.Interiors = {
       type = "shell",
       pos = vector3(0.873413, -5.749237, 2.416748)
     },
+
+        ---------LEV Shells
+    {
+      label = "LEV Low Appartment Furnished",
+      value = "lev_apartment_shell",
+      positions = {
+        Wardrobe = vector3(-7.193237, -3.111267, 1.550034),
+        Storage = vector3(-4.018959, -2.505470, 1.550034), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.290001, 2.459007, 1.524590)
+    },
+
+---------ENVI Shells
+    {
+      label = "Envi 2Bedroom Furnished",
+      value = "envi_shell_01_furnished",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-0.603394, -0.481575, 1.128761)
+    },
+    {
+      label = "Envi 2Bedroom Unfurnished",
+      value = "envi_shell_01_empty",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-0.628296, -0.587425, 1.127983)
+    },
+    {
+      label = "Envi 1Bedroom Furnished",
+      value = "envi_shell_02_furnished",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-0.119995, 11.015701, -0.045647)
+    },
+    {
+      label = "Envi 1Bedroom Unfurnished",
+      value = "envi_shell_02_empty",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-0.023499, 10.510078, -0.038773)
+    },
+    {
+      label = "Envi Studio Appt Furnished",
+      value = "envi_shell_03_furnished",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-5.021362, -1.085052, -0.194511)
+    },
+    {
+      label = "Envi Studio Appt Unfurnished",
+      value = "envi_shell_03_empty",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-5.006104, 6.842827, -0.192642)
+    },
+
+---------LYNX Shells
+    {
+      label = "Lynx Studio Furnished",
+      value = "t1_furn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(2.367249, -1.821991, 0.712212)
+    },
+    {
+      label = "Lynx Studio Unfurnished",
+      value = "t1_unfurn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(2.316711, -1.960983, 0.712234)
+    },
+    {
+      label = "Lynx 1Bedroom Furnished",
+      value = "t2_furn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-1.398071, -0.621918, -0.009995)
+    },
+    {
+      label = "Lynx 1Bedroom Unfurnished",
+      value = "t2_unfurn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-1.409790, -0.638123, -0.009995)
+    },
+    {
+      label = "Lynx 1Bedroom Modern Furnished",
+      value = "t3_furn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.051331, -0.433655, -0.010094)
+    },
+    {
+      label = "Lynx 1Bedroom Modern Unfurnished",
+      value = "t3_unfurn_shell",
+      positions = {
+        Wardrobe = vector3(1116.9374, -3162.8467, -36.8705),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.016235, -0.409576, -0.010109)
+    },
+
+---------IRREGULARS Shells
+    {
+      label = "Irreg 2Bedroom Furnished",
+      value = "free_shell1",
+      positions = {
+        Wardrobe = vector3(-19.560181, -2.139862, 2.641533),
+        Storage = vector3(-14.711975, -2.138397, 2.642258),
+      },
+      type = "shell",
+      pos = vector3(2.817810, 6.625954, 2.638351)
+    },
+    {
+      label = "Irreg 2Bedroom Unfurnished",
+      value = "unfurnished_free_shell1",
+      positions = {
+        Wardrobe = vector3(-14.681335, -2.758965, 2.642433),
+        Storage = vector3(1112.0820, -3151.4019, -37.5186), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(2.808533, 6.636490, 2.638435)
+    },
+
+---------STLIFE EXPANSION Shells
+
+    {
+      label = "Traphouse Empty",
+      value = "traphouse_shell",
+      positions = {
+        Wardrobe = vector3(-2.307983, -3.166706, 1.547150),
+        Storage = vector3(1.436218, -1.815460, 1.547073), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.533813, 6.242767, 1.547180)
+    },
+
+-----------MEDIUM Shells
+    {
+      label = "Large Trap House Empty",
+      value = "traphouse_shell",
+      positions = {
+        Wardrobe = vector3(-2.307983, -3.166706, 1.547150),
+        Storage = vector3(1.436218, -1.815460, 1.547073), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.533813, 6.242767, 1.547180)
+    },
+    {
+      label = "2Bedroom House Empty",
+      value = "traphouse_shell",
+      positions = {
+        Wardrobe = vector3(-2.307983, -3.166706, 1.547150),
+        Storage = vector3(1.436218, -1.815460, 1.547073), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.533813, 6.242767, 1.547180)
+    },
+
+----------- DELUXE Shells
+    {
+      label = "Highend Appartment 1 Empty",
+      value = "shell_highend",
+      positions = {
+        Wardrobe = vector3(-2.025085, -8.113140, -0.009987),
+        Storage = vector3(1.250305, -4.041809, -0.009972), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(22.234863, 0.388474, -6.217529)
+    },
+    {
+      label = "Highend Appartment 2 Empty",
+      value = "shell_highendv2",
+      positions = {
+        Wardrobe = vector3(-1.249878, -13.869736, 0.255554),
+        Storage = vector3(-1.539490, -8.455654, 0.255585), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(10.342407, -0.961769, -0.945030)
+    },
+
+------------OFFICEBIG Shell
+    {
+      label = "Executive Office Empty",
+      value = "shell_officebig",
+      positions = {
+        Wardrobe = vector3(-5.677246, -5.353943, 1.388382),
+        Storage = vector3(-4.679077, -9.965843, 1.388382), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(12.448242, -2.003910, 1.388351)
+    },
+
+------------GARAGE Shells
+    {
+      label = "Small Garage",
+      value = "shell_garages",
+      positions = {
+        Wardrobe = vector3(-5.677246, -5.353943, 1.388382),
+        Storage = vector3(-4.679077, -9.965843, 1.388382), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(0.147461, 4.769302, 1.489983)
+    },
+    {
+      label = "Medium Garage",
+      value = "shell_garagem",
+      positions = {
+        Wardrobe = vector3(3.019775, -3.508739, 1.939255),
+        Storage = vector3(3.055969, 3.198219, 1.939255), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(3.988220, 6.727585, 1.740044)
+    },
+    {
+      label = "Large Garage",
+      value = "shell_garagel",
+      positions = {
+        Wardrobe = vector3(-2.348206, -18.235012, 1.990013),
+        Storage = vector3(-1.336365, -14.570980, 1.990013), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-12.268494, 14.469025, 1.990013)
+    },
+
+------------WAREHOUSE Shells
+    {
+      label = "Small Warehouse Empty",
+      value = "shell_warehouse3",
+      positions = {
+        Wardrobe = vector3(-5.677246, -5.353943, 1.388382),
+        Storage = vector3(-4.679077, -9.965843, 1.388382), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(12.448242, -2.003910, 1.388351)
+    },
+    {
+      label = "Medium Warehouse Empty",
+      value = "shell_warehouse1",
+      positions = {
+        Wardrobe = vector3(3.019775, -3.508739, 1.939255),
+        Storage = vector3(3.055969, 3.198219, 1.939255), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(8.769348, -0.137642, 1.939285)
+    },
+    {
+      label = "Large Warehouse Empty",
+      value = "shell_warehouse2",
+      positions = {
+        Wardrobe = vector3(6.947876, -3.810844, 3.049011),
+        Storage = vector3(6.891724, 3.637672, 3.049011), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(12.357971, -5.574806, 3.048973)
+    },
+
+------------DRUG Shells
+    {
+      label = "Weed Lab Furnished",
+      value = "shell_weed2",
+      positions = {
+        Wardrobe = vector3(-11.081360, -10.552193, 3.086945),
+        Storage = vector3(6.832947, -2.694794, 2.086555), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-17.636963, -11.814137, 3.086952)
+    },
+    {
+      label = "Weed Lab Empty",
+      value = "shell_weed",
+      positions = {
+        Wardrobe = vector3(-11.355530, -11.114300, 3.086998),
+        Storage = vector3(6.227783, -2.675541, 2.085236), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(-17.571472, -11.692806, 3.086967)
+    },
+    {
+      label = "Cocaine Lab Furnished",
+      value = "shell_coke2",
+      positions = {
+        Wardrobe = vector3(8.245483, -4.834644, 1.948555),
+        Storage = vector3(-7.971375, -3.194679, 1.704895), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(6.314209, -8.510452, 1.948570)
+    },
+    {
+      label = "Cocain Lab Empty",
+      value = "shell_coke1",
+      positions = {
+        Wardrobe = vector3(8.346680, -4.104683, 1.948570),
+        Storage = vector3(-7.789185, -3.413357, 1.948570), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(6.220886, -8.315552, 1.948586)
+    },
+    {
+      label = "Meth Lab Furnished",
+      value = "shell_meth",
+      positions = {
+        Wardrobe = vector3(8.290466, -4.876469, 1.948555),
+        Storage = vector3(-7.605286, 3.249161, 1.948555), -- Only Works with Ox Inventory
+      },
+      type = "shell",
+      pos = vector3(6.336792, -8.570759, 1.948563)
+    },
+
   }
 }
 
